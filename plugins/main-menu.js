@@ -43,20 +43,13 @@ const defaultMenu = {
   header: '╭─㉿ 〔 %category 〕 ㉿─\n┃',
   body: '┃⫹⫺ %cmd %islimit %isPremium',
   footer: '┃\n╰────────㉿\n', 
-  footerText: 'Powered by ᯤ ʀɪᴇʟɢᴀɴs ᴏғᴄ',
+  footerText: 'Powered by ᯤ CEMARA',
   after: `
 ╭──〔  THANKS TO  〕─⬣
 ⫹⫺ Allah SWT
 ⫹⫺ Orang Tua
 ⫹⫺ Kesabaran
 ⫹⫺ Penyemangat
-⫹⫺ Nurutomo
-⫹⫺ Ilmanhdyt
-⫹⫺ Elyas
-⫹⫺ Hyzer
-⫹⫺ KrizynOfc
-⫹⫺ RielgansOfc
-⫹⫺ ArullOfc
 ╰─────────────⬣
 `,
 }
@@ -65,7 +58,7 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'absen', 'rpg', 'anime', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
+  let arrayMenu = ['all', 'absen', 'rpg', 'anime', 'downloader', 'game', 'fun', 'xp', 'group', 'image', 'quotes', 'admin', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'UTAMA',
@@ -77,7 +70,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'xp': 'EXP & LIMIT',
   'fun': 'FUN',
   'game': 'GAME',
-  'github': 'GITHUB',
   'group': 'GROUP',
   'image': 'IMAGE',
   'info': 'INFO',
@@ -93,8 +85,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   'stalk': 'STALK',
   'shortlink': 'SHORT LINK',
   'tools': 'TOOLS',
-  'vote': 'VOTING',
-  'nsfw': 'NSFW', 
+  'vote': 'VOTING', 
   'asupan': 'ASUPAN', 
   'random': 'RANDOM', 
   'textpro': 'TEXT PRO', 
@@ -322,7 +313,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             description: menuu,
             buttonText: 'LIST MENU',
             listType: 1,
-            footerText: "☰𝐂𝐫𝐞𝐚𝐭𝐨𝐫 𝐁𝐲 ©𝐀𝐫𝐮𝐥𝐥𝐎𝐟𝐜",
+            footerText: "Creator By ©CEMARA",
             mtype: 'listMessage',
             sections: [
               {
@@ -360,10 +351,6 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu Game",
                   "rowId": `${_p}? game`
                 }, {
-                  "title": "☰ GITHUB MENU",
-                  "description": "Menampilkan Menu Github",
-                  "rowId": `${_p}? github`
-                }, {
                   "title": "☰ GROUP MENU",
                   "description": "Menampilkan Menu Group",
                   "rowId": `${_p}? group`
@@ -396,10 +383,6 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu Voice Changer",
                   "rowId": `${_p}? suara`
                 }, {
-                  "title": "☰ PREMIUM MENU",
-                  "description": "Menampilkan Menu Premium",
-                  "rowId": `${_p}? premium`
-                }, {
                   "title": "☰ QUOTES MENU",
                   "description": "Menampilkan Menu Quotes",
                   "rowId": `${_p}? quotes`
@@ -423,10 +406,6 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "☰ TEXT MAKER MENU",
                   "description": "Menampilkan Maker Text",
                   "rowId": `${_p}? text`
-                }, {
-                  "title": "☰ HENTAI MENU",
-                  "description": "Menampilkan Menu Hentai",
-                  "rowId": `${_p}? nsfw`
                 }, {
                   "title": "☰ RANDOM MENU",
                   "description": "Menampilkan Menu Random/Gabut",
