@@ -3,12 +3,16 @@ let fs = require('fs')
 let handler = async (m) => {
 let krizyn = `
 ╭─────{ *R͓̽U͓̽L͓̽E͓̽S͓̽* }─────
-│•Dιʅαɾαɳɠ Hιɳα Oɯɳҽɾ
-│•Dιʅαɾαɳɠ Sραɱ
+│•Dilarang menggunakan kata-kata kotor dalam chat
+│•Dilarang rasis
+│•Dilarang spam
+│•Respect sesama member
+│•Dilarang mengirim hal yang berbau Pornografi
+│•Dilarang provokator
 ┬
 ╰──────────···
 ╭─────{ *H͓̽U͓̽K͓̽U͓̽M͓̽* }─────
-│•KυႦʅσƈƙ
+│•Akan kena warn
 ╰──────────···
 	`.trim()
   let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(fotonya2)).buffer()}, { upload: conn.waUploadToServer }) 
