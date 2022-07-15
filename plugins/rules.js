@@ -6,12 +6,10 @@ let krizyn = `
 │•Dιʅαɾαɳɠ Hιɳα Oɯɳҽɾ
 │•Dιʅαɾαɳɠ Sραɱ
 │•Dιʅαɾαɳɠ Tҽʅρ / Vƈ
-│•Jαɳɠαɳ ƈυʅιƙ Ⴆσƚ ɠɯ αɳʝιɳɠ
-│•Bσƚ Tιԃαƙ Mҽɳҽɾιɱα Sαʋҽ Kσɳƚαƙ
 ┬
 ╰──────────···
 ╭─────{ *H͓̽U͓̽K͓̽U͓̽M͓̽* }─────
-│•KυႦʅσƈƙ Lυ αɳʝιɳɠ
+│•KυႦʅσƈƙ
 ╰──────────···
 	`.trim()
   let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(fotonya2)).buffer()}, { upload: conn.waUploadToServer }) 
@@ -24,14 +22,14 @@ let krizyn = `
            hydratedButtons: [{
              urlButton: {
                displayText: '🤖GroupBot🤖',
-               url: 'https://chat.whatsapp.com/Hs5rHr27xu49VRLgdliMfR'
+               url: 'https://chat.whatsapp.com/JJJwh9W3usgEflQ4QIeqvu'
              }
 
            },
                 {
                urlButton: {
-               displayText: 'YOUTUBE ME',
-               url: 'https://youtu.be/tH-0Uq_s_H4'
+               displayText: 'MY INSTAGRAM',
+               url: 'https://www.instagram.com/dnzainn/'
              }
 
            },
